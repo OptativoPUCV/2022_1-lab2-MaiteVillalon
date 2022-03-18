@@ -86,3 +86,12 @@ list.c:87:1: error: expected identifier or '(' before '}' token
  ^
 Compilation failed
 487817b
+vi., 18 de mar. de 2022 20:35:54: 
+ list.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:5:0:
+list.c:87:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+Compilation failed
+2177e71
