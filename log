@@ -71,3 +71,18 @@ list.c:64:1: error: control reaches end of non-void function [-Werror=return-typ
 cc1.exe: all warnings being treated as errors
 Compilation failed
 5ab435b
+vi., 18 de mar. de 2022 20:35:15: 
+ list.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+list.c: In function 'pushFront':
+list.c:80:23: error: 'listaNueva' undeclared (first use in this function)
+     nodoNuevo->next = listaNueva->head;
+                       ^~~~~~~~~~
+list.c:80:23: note: each undeclared identifier is reported only once for each function it appears in
+list.c: At top level:
+list.c:87:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+Compilation failed
+487817b
