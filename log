@@ -41,3 +41,33 @@ list.c:64:1: error: control reaches end of non-void function [-Werror=return-typ
 cc1.exe: all warnings being treated as errors
 Compilation failed
 6f24c25
+vi., 18 de mar. de 2022 20:33:05: 
+ list.c | 16 ++++++++--------
+ 1 file changed, 8 insertions(+), 8 deletions(-)
+In file included from test.c:5:0:
+list.c: In function 'lastList':
+list.c:59:14: error: 'List {aka struct List}' has no member named 'prev'
+     if (!list->prev) return NULL;
+              ^~
+list.c:60:25: error: 'List {aka struct List}' has no member named 'prev'
+     list->current = list->prev;
+                         ^~
+list.c:61:16: error: 'List {aka struct List}' has no member named 'prev'
+     return list->prev->data;
+                ^~
+list.c: In function 'pushFront':
+list.c:80:23: error: 'listaNueva' undeclared (first use in this function)
+     nodoNuevo->next = listaNueva->head;
+                       ^~~~~~~~~~
+list.c:80:23: note: each undeclared identifier is reported only once for each function it appears in
+list.c: At top level:
+list.c:87:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+list.c: In function 'lastList':
+list.c:64:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+5ab435b
