@@ -240,3 +240,26 @@ list.c:128:9: error: unused variable 'reserva' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 e5569ab
+vi., 18 de mar. de 2022 22:21:24: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+list.c: In function 'popCurrent':
+list.c:128:19: error: initialization makes integer from pointer without a cast [-Werror=int-conversion]
+     int reserva = list->current->data;
+                   ^~~~
+list.c:129:33: error: passing argument 1 of 'createNode' makes pointer from integer without a cast [-Werror=int-conversion]
+     Node * auxPrev = createNode(reserva);
+                                 ^~~~~~~
+list.c:22:8: note: expected 'void *' but argument is of type 'int'
+ Node * createNode(void * data)
+        ^~~~~~~~~~
+list.c:130:33: error: passing argument 1 of 'createNode' makes pointer from integer without a cast [-Werror=int-conversion]
+     Node * auxNext = createNode(reserva);
+                                 ^~~~~~~
+list.c:22:8: note: expected 'void *' but argument is of type 'int'
+ Node * createNode(void * data)
+        ^~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+bba73aa
