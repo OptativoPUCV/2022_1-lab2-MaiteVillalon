@@ -189,3 +189,30 @@ vi., 18 de mar. de 2022 22:02:22:
  tests:  10|2
 total_score: 45/70
 21aca21
+vi., 18 de mar. de 2022 22:05:43: 
+ list.c | 21 ++-------------------
+ 1 file changed, 2 insertions(+), 19 deletions(-)
+test.c: In function 'pushCurrent':
+test.c:454:5: error: 'main' is normally a non-static function [-Werror=main]
+ int main( int argc, char *argv[] ) {
+     ^~~~
+test.c:474:1: error: expected declaration or statement at end of input
+ }
+ ^
+At top level:
+test.c:454:5: error: 'main' defined but not used [-Werror=unused-function]
+ int main( int argc, char *argv[] ) {
+     ^~~~
+test.c:8:8: error: '_strdup' defined but not used [-Werror=unused-function]
+ char * _strdup(const char * str) {
+        ^~~~~~~
+In file included from test.c:5:0:
+list.c:130:6: error: 'cleanList' defined but not used [-Werror=unused-function]
+ void cleanList(List * list) {
+      ^~~~~~~~~
+list.c:121:8: error: 'popBack' defined but not used [-Werror=unused-function]
+ void * popBack(List * list) {
+        ^~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+f1cb558
