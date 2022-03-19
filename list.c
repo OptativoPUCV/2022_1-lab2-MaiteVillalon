@@ -111,6 +111,7 @@ void pushCurrent(List * list, void * data)
         nodo2->prev = list->tail;
         list->tail=nodo2;
     }
+
 }
 
 void * popFront(List * list) {
@@ -131,6 +132,7 @@ void * popCurrent(List * list)
     {
         list->current->prev->next = NULL;
         list->tail = list->current->prev;
+        free (list->current);
         return reserva;
     }
 
@@ -138,8 +140,19 @@ void * popCurrent(List * list)
     {
         list->current->next->prev=NULL;
         list->head = list->current->next;
+        free (list->current);
         return reserva;
     }
+    else
+    {
+        Node * aux = createNode(list->curren->data);
+        aux = list->current->next;
+        list->current->prev->next= aux;
+        aux->prev= list->current->prev;
+        free(list->current);
+        return reserva;
+    }
+
     
     return NULL;
 }

@@ -380,3 +380,13 @@ sá., 19 de mar. de 2022 13:16:20:
  tests:  11|1
 total_score: 55/70
 e955ea7
+sá., 19 de mar. de 2022 13:28:44: 
+ list.c | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+In file included from test.c:5:0:
+list.c: In function 'popCurrent':
+list.c:148:37: error: 'List {aka struct List}' has no member named 'curren'; did you mean 'current'?
+         Node * aux = createNode(list->curren->data);
+                                     ^~
+Compilation failed
+582c830
