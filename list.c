@@ -123,7 +123,18 @@ void * popBack(List * list) {
     return popCurrent(list);
 }
 
-void * popCurrent(List * list) {
+void * popCurrent(List * list)
+{
+    int reserva = list->current->data;
+    Node * auxPrev = createNode(data);
+    Node * auxNext = createNode(data);
+
+    auxNext=list->current->next;
+    auxPrev=list->current->prev;
+
+    auxNext->prev=auxPrev;
+    auxPrev->next=auxNext;
+
     return NULL;
 }
 

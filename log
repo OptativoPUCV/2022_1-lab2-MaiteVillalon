@@ -222,3 +222,21 @@ vi., 18 de mar. de 2022 22:06:15:
  tests:  11|1
 total_score: 55/70
 3121b29
+vi., 18 de mar. de 2022 22:20:07: 
+ list.c | 13 ++++++++++++-
+ 1 file changed, 12 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function 'popCurrent':
+list.c:128:19: error: initialization makes integer from pointer without a cast [-Werror=int-conversion]
+     int reserva = list->current->data;
+                   ^~~~
+list.c:129:33: error: 'data' undeclared (first use in this function)
+     Node * auxPrev = createNode(data);
+                                 ^~~~
+list.c:129:33: note: each undeclared identifier is reported only once for each function it appears in
+list.c:128:9: error: unused variable 'reserva' [-Werror=unused-variable]
+     int reserva = list->current->data;
+         ^~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+e5569ab
