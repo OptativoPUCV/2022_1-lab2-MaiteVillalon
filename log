@@ -127,3 +127,18 @@ list.c:96:12: error: unused variable 'nodo2' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 574f80d
+vi., 18 de mar. de 2022 21:44:47: 
+ list.c | 12 +++++++-----
+ 1 file changed, 7 insertions(+), 5 deletions(-)
+In file included from test.c:5:0:
+list.c: In function 'pushCurrent':
+list.c:106:26: error: 'aux' undeclared (first use in this function)
+             nodo2->next= aux;
+                          ^~~
+list.c:106:26: note: each undeclared identifier is reported only once for each function it appears in
+list.c:97:12: error: variable 'x' set but not used [-Werror=unused-but-set-variable]
+     Node * x = createNode(data);
+            ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+c5c45f8
