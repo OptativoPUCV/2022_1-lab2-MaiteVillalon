@@ -171,3 +171,9 @@ list.c:113:31: error: 'nuevo' undeclared (first use in this function)
 list.c:113:31: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 4e97022
+vi., 18 de mar. de 2022 21:57:28: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  10|2
+total_score: 45/70
+e5de231
