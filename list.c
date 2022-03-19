@@ -132,7 +132,7 @@ void * popCurrent(List * list)
         list->current->prev = NULL;
         return reserva;
     }
-
+    return NULL;
 }
 
 void cleanList(List * list) {
