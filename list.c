@@ -133,7 +133,7 @@ void * popCurrent(List * list)
     auxPrev=list->current->prev;
 
     auxNext->prev=auxPrev;
-    auxPrev->next=auxNext;
+    auxPrev->next=list->current->next;;
 
     return reserva;
 }
