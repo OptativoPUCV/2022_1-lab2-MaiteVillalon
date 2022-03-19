@@ -101,3 +101,29 @@ vi., 18 de mar. de 2022 20:36:08:
  tests:  10|2
 total_score: 45/70
 88b65ee
+vi., 18 de mar. de 2022 21:41:48: 
+ list.c | 20 +++++++++++++++++++-
+ 1 file changed, 19 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function 'pushCurrent':
+list.c:97:31: error: 'return' with a value, in function returning void [-Werror]
+     if (!list->current)return NULL;
+                               ^~~~
+list.c:94:6: note: declared here
+ void pushCurrent(List * list, void * data)
+      ^~~~~~~~~~~
+list.c:98:29: error: 'return' with a value, in function returning void [-Werror]
+     if (!list->head) return NULL:
+                             ^~~~
+list.c:94:6: note: declared here
+ void pushCurrent(List * list, void * data)
+      ^~~~~~~~~~~
+list.c:98:33: error: expected ';' before ':' token
+     if (!list->head) return NULL:
+                                 ^
+list.c:96:12: error: unused variable 'nodo2' [-Werror=unused-variable]
+     Node * nodo2 = createNode(data);
+            ^~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+574f80d
