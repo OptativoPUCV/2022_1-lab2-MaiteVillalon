@@ -263,3 +263,18 @@ list.c:22:8: note: expected 'void *' but argument is of type 'int'
 cc1.exe: all warnings being treated as errors
 Compilation failed
 bba73aa
+vi., 18 de mar. de 2022 22:22:12: 
+ list.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+list.c: In function 'popCurrent':
+list.c:129:33: error: 'data' undeclared (first use in this function)
+     Node * auxPrev = createNode(data);
+                                 ^~~~
+list.c:129:33: note: each undeclared identifier is reported only once for each function it appears in
+list.c:128:9: error: unused variable 'reserva' [-Werror=unused-variable]
+     int reserva = (int) list->current->data;
+         ^~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+01cb927

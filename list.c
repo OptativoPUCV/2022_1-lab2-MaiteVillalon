@@ -125,9 +125,9 @@ void * popBack(List * list) {
 
 void * popCurrent(List * list)
 {
-    int reserva = list->current->data;
-    Node * auxPrev = createNode(reserva);
-    Node * auxNext = createNode(reserva);
+    int reserva = (int) list->current->data;
+    Node * auxPrev = createNode(data);
+    Node * auxNext = createNode(data);
 
     auxNext=list->current->next;
     auxPrev=list->current->prev;
