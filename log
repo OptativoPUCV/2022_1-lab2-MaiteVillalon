@@ -390,3 +390,9 @@ list.c:148:37: error: 'List {aka struct List}' has no member named 'curren'; did
                                      ^~
 Compilation failed
 582c830
+sá., 19 de mar. de 2022 13:29:03: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  12|0
+total_score: 70/70
+eb6396c
