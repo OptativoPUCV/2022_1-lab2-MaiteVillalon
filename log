@@ -148,3 +148,9 @@ vi., 18 de mar. de 2022 21:45:05:
  tests:  10|2
 total_score: 45/70
 c1908ac
+vi., 18 de mar. de 2022 21:47:11: 
+ list.c | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+ tests:  10|2
+total_score: 45/70
+d9983dd

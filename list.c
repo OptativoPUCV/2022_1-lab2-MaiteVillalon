@@ -108,7 +108,17 @@ void pushCurrent(List * list, void * data)
         }
 
     }
-
+    else
+    {
+            
+        if (list->current->next)
+        {
+            x=list->current->next;
+            list->current->next=nodo2;
+            nodo2->next= x;
+            nodo2->prev=list->current->prev; 
+        }
+    }
 
 
 
