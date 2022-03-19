@@ -126,16 +126,13 @@ void * popBack(List * list) {
 void * popCurrent(List * list)
 {
     void * reserva =  list->current->data;
-    Node * auxPrev = createNode(list->current->data);
-    Node * auxNext = createNode(list->current->data);
+    
+    if (list->current == tail)
+    {
+        list->current->prev == NULL;
+        return reserva;
+    }
 
-    auxNext=list->current->next;
-    auxPrev=list->current->prev;
-
-    auxNext->prev=auxPrev;
-    auxPrev->next=list->current->next;;
-
-    return reserva;
 }
 
 void cleanList(List * list) {

@@ -313,3 +313,21 @@ vi., 18 de mar. de 2022 22:33:50:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 9390468
+sá., 19 de mar. de 2022 12:58:07: 
+ list.c | 13 +++++--------
+ 1 file changed, 5 insertions(+), 8 deletions(-)
+In file included from test.c:5:0:
+list.c: In function 'popCurrent':
+list.c:130:26: error: 'tail' undeclared (first use in this function)
+     if (list->current == tail)
+                          ^~~~
+list.c:130:26: note: each undeclared identifier is reported only once for each function it appears in
+list.c:132:29: error: statement with no effect [-Werror=unused-value]
+         list->current->prev == NULL;
+                             ^
+list.c:136:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+4938c09
