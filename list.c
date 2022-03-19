@@ -127,7 +127,7 @@ void * popCurrent(List * list)
 {
     void * reserva =  list->current->data;
     
-    if (list->current == tail)
+    if (list->current == list->tail)
     {
         list->current->prev == NULL;
         return reserva;
